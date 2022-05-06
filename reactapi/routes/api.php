@@ -15,10 +15,12 @@ Route::post('register', [AuthController::class, 'register']);
 Route::post('login', [AuthController::class, 'login']);
 
 
+Route::post('store-guest', [GuestController::class, 'store']);
 //getguest for booking in navbar
 // Route::get('getGuest', [FrontendController::class, 'guest']);
 // Route::get('fetchGuest/{slot_id}', [FrontendController::class, 'guest']);
 // Route::get('view-slot/${guest_name}', [FrontendController::class, 'viewslot']);
+
 
 //obook
 Route::post('st-obook', [ObookController::class, 'st']);
@@ -42,7 +44,7 @@ Route::middleware(['auth:sanctum', 'isAPIAdmin'])->group(function () {
 
     //Guest
     Route::get('/view-guest', [GuestController::class, 'index']);
-    Route::post('store-guest', [GuestController::class, 'store']);
+    // Route::post('store-guest', [GuestController::class, 'store']);
     Route::get('edit-guest/{id}', [GuestController::class, 'edit']);
     Route::put('update-guest/{id}', [GuestController::class, 'update']);
     Route::delete('delete-guest/{id}', [GuestController::class, 'destroy']);

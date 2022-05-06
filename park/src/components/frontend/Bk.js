@@ -137,30 +137,57 @@ const Bk = () => {
                         </div>
                     </div>
                 </div>
+
+                <div className="row">
+                    <div className="col-md-6 col-12 mb-4">
+                        <div className="form-control d-flex flex-column">
+                            <p className="h-blue">Duration</p> <select name="duration" onChange={handleInput} value={guestInput.duration} className="border-0 outline-none">
+                                <option value="" hidden selected>Hours | days</option>
+                                <option value="1 hr">1 hour</option>
+                                <option value="2 hr">2 hours</option>
+                                <option value="3 hr">3 hours</option>
+                                <option value="4 hr">4 hours</option>
+                                <option value="5 hr">5 hours</option>
+                                <option value="6 hr">6 hours</option>
+                                <option value="7 hr">7 hours</option>
+                                <option value="8 hr">8 hours</option>
+                                <option value="9 hr">9 hours</option>
+                                <option value="10 hr">10 hours</option>
+                                <option value="11 hr">11 hours</option>
+                                <option value="12 hr">12 hours</option>
+
+                                <option value="1 day">1 day</option>
+                                <option value="2 day">2 days</option>
+                                <option value="3 day">3 days</option>
+                                <option value="4 day">4 days</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
                 <div className="row">
                     {/* <div className="col-md-3 mb-5">
                     </div> */}
                     <div className="col-md-3 mb-4">
                     <div className="form-control d-flex flex-column">
-                            <p className="h-blue">Charges (Rs. 40/Hours)</p> <select name="charge" onChange={handleInput} value={guestInput.charge} className="border-0 outline-none">
-                                <option value="" hidden selected>Hours/days</option>
-                                <option value="RS. 20">1 hour</option>
-                                <option value="Rs. 40">2 hours</option>
-                                <option value="Rs. 60">3 hours</option>
-                                <option value="Rs. 80">4 hours</option>
-                                <option value="Rs. 100">5 hours</option>
-                                <option value="Rs. 120">6 hours</option>
-                                <option value="Rs. 140">7 hours</option>
-                                <option value="Rs. 160">8 hours</option>
-                                <option value="Rs. 180">9 hours</option>
-                                <option value="Rs. 200">10 hours</option>
-                                <option value="Rs. 220">11 hours</option>
-                                <option value="Rs. 240">12 hours</option>
-                                <hr />
-                                <option value="Rs. 240">1 day</option>
-                                <option value="Rs. 480">2 days</option>
-                                <option value="Rs. 720">3 days</option>
-                                <option value="Rs. 960">4 days</option>   
+                            <p className="h-blue">Charges (₹ 20 / Hr)</p> <select name="charge" onChange={handleInput} value={guestInput.charge} className="border-0 outline-none">
+                                <option value="" hidden selected>Hours | days</option>
+                                <option value="RS. 20">₹ 20 / 1hr</option>
+                                <option value="RS. 40">₹ 40 / 2hr</option>
+                                <option value="RS. 60">₹ 60 / 3hr</option>
+                                <option value="RS. 80">₹ 80 / 4hr</option>
+                                <option value="RS. 100">₹ 100 / 5hr</option>
+                                <option value="RS. 120">₹ 120 / 6hr</option>
+                                <option value="RS. 140">₹ 140 / 7hr</option>
+                                <option value="RS. 160">₹ 160 / 8hr</option>
+                                <option value="RS. 180">₹ 180 / 9hr</option>
+                                <option value="RS. 200">₹ 200 / 10hr</option>
+                                <option value="RS. 220">₹ 220 / 11hr</option>
+                                <option value="RS. 240">₹ 240 / 12hr</option>
+
+                                <option value="Rs. 240">₹ 240 / 1 day</option>
+                                <option value="Rs. 480">₹ 480 / 2 day</option>
+                                <option value="Rs. 720">₹ 720 / 3 day</option>
                             </select>
                             <small className="text-danger">{error_list.charge}</small>
                         </div> 
@@ -177,7 +204,7 @@ const Bk = () => {
                         </div>
                     </div>
                 </div>
-                <button type="submit" className="btn btn-warning form-control text-center">book Now</button>
+                <button type="submit" className="btn btn-warning form-control text-center">Book Now</button>
             </form>
         </div>
     )

@@ -12,7 +12,7 @@ class Slottrans extends Model
     use HasFactory;
     protected $table = 'tbl_slot_transaction';
     protected $fillable = [
-        // 'slot_id',
+        'slot_id',
         'vehicle_id',
         'lc_number',
         'start_date_time',
