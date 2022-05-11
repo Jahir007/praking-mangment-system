@@ -95,7 +95,6 @@ const Sidebar = () => {
                             <nav className="sb-sidenav-menu-nested nav">
                                 <Link className="nav-link" to="/login">Login</Link>
                                 <Link className="nav-link" to="/register">Register</Link>
-                                {/* <Link className="nav-link" to="password.html">Forgot Password</Link> */}
                             </nav>
                         </div>
                         <Link className="nav-link collapsed" to="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
@@ -106,7 +105,6 @@ const Sidebar = () => {
                             <nav className="sb-sidenav-menu-nested nav">
                                 <Link className="nav-link" to="/403">403 Page</Link>
                                 <Link className="nav-link" to="/404">404 Page</Link>
-                                {/* <Link className="nav-link" to="500.html">500 Page</Link> */}
                             </nav>
                         </div>
                     </nav>
