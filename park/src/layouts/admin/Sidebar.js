@@ -9,75 +9,77 @@ const Sidebar = () => {
         <nav className="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
         <div className="sb-sidenav-menu">
             <div className="nav">
-                {/* <div className="sb-sidenav-menu-heading">Core</div> */}
+
                 <Link className="nav-link" to="/admin/dashboard">
                     <div className="sb-nav-link-icon"><i className="fas fa-columns"></i></div>
                     Dashboard
                 </Link>
-                {/* <Link className="nav-link" to="/admin/add-owner">
-                    <div className="sb-nav-link-icon"><i className="fas fa-tachometer-alt"></i></div>
-                    Owner
-                </Link> */}
-                <Link className="nav-link" to="/admin/view-owner">
-                    <div className="sb-nav-link-icon"><i className= "fas fa-user-check"></i></div>
-                     Owner
-                </Link>
 
-                {/* <Link className="nav-link" to="/admin/add-guest">
-                    <div className="sb-nav-link-icon"><i className="fas fa-tachometer-alt"></i></div>
-                    Guest
-                </Link> */}
-
-                <Link className="nav-link" to="/admin/view-guest">
-                    <div className="sb-nav-link-icon"><i className="fas fa-id-card"></i></div>
-                     Guest
-                </Link>
-
-                {/* <Link className="nav-link" to="/admin/add-slot">
-                    <div className="sb-nav-link-icon"><i className="fas fa-tachometer-alt"></i></div>
-                    Slot
-                </Link> */}
-
-                <Link className="nav-link" to="/admin/view-slot">
-                    <div className="sb-nav-link-icon"><i className="fas fa-check-to-slot"></i></div>
-                     Slot
-                </Link>
-
-                {/* <Link className="nav-link" to="/admin/add-vehicle">
-                    <div className="sb-nav-link-icon"><i className="fas fa-tachometer-alt"></i></div>
-                    Slot
-                </Link> */}
-
-                <Link className="nav-link" to="/admin/view-vehicle">
-                    <div className="sb-nav-link-icon"><i className="fas fa-car"></i></div>
-                     Vehicle
-                </Link>
-
-                {/* <Link className="nav-link" to="/admin/add-slottrans">
-                    <div className="sb-nav-link-icon"><i className="fas fa-tachometer-alt"></i></div>
-                    Slot
-                </Link> */}
-
-                <Link className="nav-link" to="/admin/view-slottrans">
-                    <div className="sb-nav-link-icon"><i className="fas fa-list-check"></i></div>
-                    View Slot Transaction
-                </Link>
-
-
-                
-
-                {/* <div className="sb-sidenav-menu-heading">Interface</div>
                 <Link className="nav-link collapsed" to="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                     <div className="sb-nav-link-icon"><i className="fas fa-columns"></i></div>
-                    Layouts
+                    Owner
                     <div className="sb-sidenav-collapse-arrow"><i className="fas fa-angle-down"></i></div>
-                </Link> */}
-                {/* <div className="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                </Link> 
+                <div className="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav className="sb-sidenav-menu-nested nav">
-                        <Link className="nav-link" to="layout-static.html">Static Navigation</Link>
-                        <Link className="nav-link" to="layout-sidenav-light.html">Light Sidenav</Link>
+                        <Link className="nav-link" to="/admin/add-owner">Add Owner</Link>
+                        <Link className="nav-link" to="/admin/view-owner">View Owner</Link>
                     </nav>
-                </div> */}
+                </div>
+
+
+                <Link className="nav-link collapsed" to="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts1" aria-expanded="false" aria-controls="collapseLayouts1">
+                    <div className="sb-nav-link-icon"><i className="fas fa-columns"></i></div>
+                    Guest
+                    <div className="sb-sidenav-collapse-arrow"><i className="fas fa-angle-down"></i></div>
+                </Link> 
+                <div className="collapse" id="collapseLayouts1" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                    <nav className="sb-sidenav-menu-nested nav">
+                        <Link className="nav-link" to="/admin/add-guest">Add Guest</Link>
+                        <Link className="nav-link" to="/admin/view-guest">View Guest</Link>
+                    </nav>
+                </div>
+
+
+                <Link className="nav-link collapsed" to="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts2" aria-expanded="false" aria-controls="collapseLayouts2">
+                    <div className="sb-nav-link-icon"><i className="fas fa-columns"></i></div>
+                    Slot
+                    <div className="sb-sidenav-collapse-arrow"><i className="fas fa-angle-down"></i></div>
+                </Link> 
+                <div className="collapse" id="collapseLayouts2" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                    <nav className="sb-sidenav-menu-nested nav">
+                        <Link className="nav-link" to="/admin/add-slot">Add Slot</Link>
+                        <Link className="nav-link" to="/admin/view-slot">View Slot</Link>
+                    </nav>
+                </div>
+
+                
+                <Link className="nav-link collapsed" to="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts3" aria-expanded="false" aria-controls="collapseLayouts3">
+                    <div className="sb-nav-link-icon"><i className="fas fa-car"></i></div>
+                    Vehicle
+                    <div className="sb-sidenav-collapse-arrow"><i className="fas fa-angle-down"></i></div>
+                </Link> 
+                <div className="collapse" id="collapseLayouts3" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                    <nav className="sb-sidenav-menu-nested nav">
+                        <Link className="nav-link" to="/admin/add-vehicle">Add Vehicle</Link>
+                        <Link className="nav-link" to="/admin/view-vehicle">View Vehicle</Link>
+                    </nav>
+                </div>
+
+
+                <Link className="nav-link collapsed" to="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts4" aria-expanded="false" aria-controls="collapseLayouts4">
+                    <div className="sb-nav-link-icon"><i className="fas fa-list-check"></i></div>
+                    Slot Transaction
+                    <div className="sb-sidenav-collapse-arrow"><i className="fas fa-angle-down"></i></div>
+                </Link> 
+                <div className="collapse" id="collapseLayouts4" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                    <nav className="sb-sidenav-menu-nested nav">
+                        <Link className="nav-link" to="/admin/add-slottrans">Add Slot Transaction</Link>
+                        <Link className="nav-link" to="/admin/view-slottrans">View Slot Transaction</Link>
+                    </nav>
+                </div>
+
+
                 <Link className="nav-link collapsed" to="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                     <div className="sb-nav-link-icon"><i className="fas fa-book-open"></i></div>
                     Pages
@@ -109,15 +111,6 @@ const Sidebar = () => {
                         </div>
                     </nav>
                 </div>
-                {/* <div className="sb-sidenav-menu-heading">Addons</div> */}
-                {/* <Link className="nav-link" to="charts.html">
-                    <div className="sb-nav-link-icon"><i className="fas fa-chart-area"></i></div>
-                    Charts
-                </Link> */}
-                {/* <Link className="nav-link" to="tables.html">
-                    <div className="sb-nav-link-icon"><i className="fas fa-table"></i></div>
-                    Tables
-                </Link> */}
             </div>
         </div>
         
